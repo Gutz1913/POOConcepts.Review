@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace POOConcepts.Core;
+﻿namespace POOConcepts.Core;
 
 public abstract class Employee
 {
@@ -14,8 +10,8 @@ public abstract class Employee
     public Date HireDate { get; set; } = null!;
 
     public abstract decimal GetValueToPay();
-    public override string ToString() => 
-        $"{Id}\t{FirstName} {LastName}\n\t" + 
-        $"Born date......: {BornDate}\n\t" + 
-        $"Hire date......: {HireDate}"; 
+    public override string ToString() =>
+        $"{Id}\t{FirstName} {LastName}\n\t" +
+        $"Born date......: {BornDate}\n\t" +
+        $"Hire date......: {HireDate}";
 }
