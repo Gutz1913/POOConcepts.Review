@@ -21,7 +21,7 @@ public class HourlyEmployee : Employee
 
     public override string ToString() => $"{base.ToString()}\n\t" + 
         $"Working Hours..: {WorkingHours,20:N2}\n\t" + 
-        $"Hour Value .....: {HourValue,20:C2}\n\t" + 
+        $"Hour Value ....: {HourValue,20:C2}\n\t" + 
         $"Salary.........: {GetValueToPay(),20:C2}";
 
     private float ValidateWorkingHours(float workingHours)

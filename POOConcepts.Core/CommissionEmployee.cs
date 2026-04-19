@@ -11,13 +11,18 @@ public class CommissionEmployee : Employee
         set => _commissionPercent = ValidateCommissionPercent(value);
     }
 
-    public decimal Sales 
+    public decimal Sales
     {
         get => _sales;
-        set => _sales = ValidateSales(value); 
+        set => _sales = ValidateSales(value);
     }
 
     public override decimal GetValueToPay() => Sales * (decimal)CommissionPercent;
+
+    public override string ToString() => $"{base.ToString()}\n\t" +
+            $"Commision %....: {CommissionPercent,20:P2}\n\t" +
+            $"Sales..........: {Sales,20:C2}\n\t" +
+            $"Salary.........: {GetValueToPay(),20:C2}";
 
     private decimal ValidateSales(decimal sales)
     {
