@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="POOConcepts.Console/POOConcepts.Console.csproj" />
   <Project Path="POOConcepts.Core/POOConcepts.Core.csproj" />
 </Solution>
